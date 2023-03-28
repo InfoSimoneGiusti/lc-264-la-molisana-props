@@ -1,0 +1,30 @@
+@use 'bootstrap';
+
+@use "./partials/_variables";
+@use "./partials/_buttons";
+
+footer {
+  display: flex;
+  min-height: 30vh;
+  border-top: 2px solid lightblue;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/footer-montagne-bottom.jpg"); //devo specificare il percorso assoluto rispetto alla src
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: variables.$color-bg;
+}
+
+main {
+  min-height: 80vh;
+
+  h1 {
+    font-size: 50px;
+    color: variables.$color-primary
+  }
+}
